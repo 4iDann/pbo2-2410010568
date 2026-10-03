@@ -1,4 +1,5 @@
 package id.ac.uniska.pbo2.p02;
+import java.util.List;
 
 /**
  * Menjalankan skenario peminjaman dan pengembalian pada Perpustakaan Mini.
@@ -26,11 +27,10 @@ public class AplikasiPerpustakaan {
         tampilkanDaftar(perpus);
 
         // Pencarian berdasarkan judul
-        System.out.println();
-        System.out.println("=== Hasil Pencarian \"code\" ===");
-
-        for (Koleksi k : perpus.cariJudul("code")) {
-            System.out.println(k);
+        List<Koleksi> hasil = perpus.cariJudul("code");
+        System.out.println("Hasil pencarian \"code\": " + hasil.size() + " koleksi");
+        for (Koleksi k : hasil) {
+        System.out.println(k);
         }
 
         // Percobaan peminjaman
