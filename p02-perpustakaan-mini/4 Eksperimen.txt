@@ -1,0 +1,13 @@
+Nama : Muhammad Ajidannor Rahman
+NPM : 2410010568
+Kelas : 5C 
+
+Jawaban singkat ke 4 pertanyaan yang merupakan hasil dari eksperimen
+
+1. Terjadi error karena class Koleksi adalah abstract sehingga tidak dapat diinstansiasi secara langsung dengan new
+
+2.hitungdenda vs hitungDenda: dengan @Override terjadi error karena nama method berbeda. Jika @Override dihapus, method dianggap method baru dan tidak mengoverride hitungDenda, sehingga method abstract parent tetap belum diimplementasikan
+
+3. Terjadi IllegalArgumentException karena constructor Koleksi memiliki validasi bahwa judul tidak boleh kosong
+
+4. Melanggar enkapsulasi karena status dapat diubah langsung dari luar class. Hal ini juga dapat menyebabkan ketidakkonsistenan antara status koleksi dan data peminjam.
