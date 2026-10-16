@@ -78,5 +78,32 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 <img width="764" height="416" alt="Panel dan Layout 1" src="https://github.com/user-attachments/assets/31179485-1676-44e8-b81d-2ea0acaa8c3b" />
 <img width="770" height="428" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/19df4f55-af74-4fac-ba87-389eaca38bb1" />
 
+# Eksperimen Praktikum 2
+Nama : Muhammad Ajidannor Rahman
+NPM : 2410010568
+Kelas : 5C 
+
+[Eksperimen 2.txt](https://github.com/user-attachments/files/33551004/Eksperimen.2.txt)
+
+1. Waktu Alignment flowPanel diubah ke Center, tombol-tombolnya pindah ke tengah, tidak lagi di kiri. Kalau jendela dikecilkan, tombol yang tidak muat turun ke baris bawah, dan tiap baris tetap di tengah. Baris kode yang berubah adalah baris setLayout, dari FlowLayout.LEFT menjadi FlowLayout.CENTER.
+
+2. Hasilnya 5 baris. Kalau Rows diisi 0, Java menghitung sendiri jumlah barisnya. Ada 9 tombol dan 2 kolom, jadi tombol dibagi dua-dua: 4 baris penuh, lalu 1 baris sisa yang hanya berisi tombol 9.
+
+3.Tombol jadi melebar sampai memenuhi lebar panel, dan ikut melebar kalau jendela dilebarkan, sehingga semua tombol sama lebar. Sebelumnya tombol hanya selebar tulisannya.
+
+
+# Eksperimen Praktikum 4
+Nama : Muhammad Ajidannor Rahman
+NPM : 2410010568
+Kelas : 5C 
+
+[Eksperimen 4.txt](https://github.com/user-attachments/files/33551013/Eksperimen.4.txt)
+
+1. Kalau hanya namaField yang diubah ke 0.0, tidak terlalu kelihatan bedanya, karena isian lain masih 1.0 dan kolomnya tetap melebar bersama.
+
+2. Saat diatur ke North, form tetap menempel di bawah header walau jendela ditinggikan. Tetapi saat diatur Center, form memakai seluruh sisa tinggi, jadi barisnya bergeser atau merenggang dan terlihat jauh dari header.
+
+3. Yang rusak lebih dulu tombol Batal dan Simpan, karena tombolnya turun ke baris kedua tapi tempatnya tidak bertambah tinggi, jadi terpotong. Setelah itu label dan isian menyempit, dan judul di header ikut terpotong.
+
 
 
