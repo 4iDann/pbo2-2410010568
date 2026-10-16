@@ -10,7 +10,7 @@
 <img width="1920" height="1080" alt="Keluaran Tema Terang" src="https://github.com/user-attachments/assets/682e66f4-49d4-443d-95d6-ce031ffc0b97" />
 
 # Jawaban Pertanyaan Refleksi Singkat
-[UploadinNama : Muhammad Ajidannor Rahman
+Nama : Muhammad Ajidannor Rahman
 NPM : 2410010568
 Kelas : 5C 
 
