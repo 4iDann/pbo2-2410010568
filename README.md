@@ -62,6 +62,11 @@ Fill: Menentukan apakah komponen mengisi ruang sel yang tersedia, baik secara ho
 5. Konsistensi: Label, kolom input, dan tombol disusun dengan pola yang seragam sehingga form mudah dipahami.
 Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout manager agar tampilan rapi dan terstruktur.
 
+# Form Sketsa
+<img width="2064" height="2934" alt="Form Sketsa" src="https://github.com/user-attachments/assets/63c614eb-e887-488a-9bc5-49606e149c0e" />
+
+# Tabel Rancangan
+<img width="477" height="200" alt="Tabel Rancangan" src="https://github.com/user-attachments/assets/65d4b457-308c-4cab-bc0e-0550ca9d63e4" />
 
 # Output Ukuran Awal
 <img width="1920" height="1080" alt="Output Ukuran Awal" src="https://github.com/user-attachments/assets/0252020e-c814-46db-b958-8ebd7ab10cf4" />
