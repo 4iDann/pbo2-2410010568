@@ -79,9 +79,6 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 <img width="770" height="428" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/19df4f55-af74-4fac-ba87-389eaca38bb1" />
 
 # Eksperimen Praktikum 2
-Nama : Muhammad Ajidannor Rahman
-NPM : 2410010568
-Kelas : 5C 
 
 [Eksperimen 2.txt](https://github.com/user-attachments/files/33551004/Eksperimen.2.txt)
 
@@ -93,9 +90,6 @@ Kelas : 5C
 
 
 # Eksperimen Praktikum 4
-Nama : Muhammad Ajidannor Rahman
-NPM : 2410010568
-Kelas : 5C 
 
 [Eksperimen 4.txt](https://github.com/user-attachments/files/33551013/Eksperimen.4.txt)
 
@@ -104,6 +98,28 @@ Kelas : 5C
 2. Saat diatur ke North, form tetap menempel di bawah header walau jendela ditinggikan. Tetapi saat diatur Center, form memakai seluruh sisa tinggi, jadi barisnya bergeser atau merenggang dan terlihat jauh dari header.
 
 3. Yang rusak lebih dulu tombol Batal dan Simpan, karena tombolnya turun ke baris kedua tapi tempatnya tidak bertambah tinggi, jadi terpotong. Setelah itu label dan isian menyempit, dan judul di header ikut terpotong.
+
+# Deklarasi AI
+
+[Deklarasi AI.txt](https://github.com/user-attachments/files/33556091/Deklarasi.AI.txt)
+
+AI yang saya gunakan yaitu Claude AI
+
+1. Saya sempat bingung pada praktikum 3 (Sebagai lanjutan praktikum 2 atau untuk praktikum 4), sehingga bertanya pada AI di praktikum mana saya perlu praktikkan. Saya juga melampirkan screenshot praktikum 2 dan 4
+
+2. Lalu pada bagian radio button (Mahasiswa, Dosen, Umum) di form Anggota Perpustakaan, saat saya susun jaraknya berjauhan dan saya meminta bantuan AI untuk solusi agar dapat mengatasi masalah tersebut. Lalu saya mengirimkan hasil screenshot yang menampilkan radio button berjarak jauh.
+
+Jadi saya bertanya pada Claude AI dengan prompt :
+
+1. Saya bingung dengan Praktikum 3 apakah ini lanjutan Praktikum 2 (GaleriLayout) atau dipraktikkan di Praktikum 4 (FormBiodata)? Tolong jelaskan hubungan ketiga praktikum itu berdasarkan isi screenshort yang saya lampirkan, lalu sebutkan di praktikum mana saya harus benar-benar membuat form dan mengisi constraint GridBagLayout.
+
+2. Bantu saya mengatasi masalah pada radio button yang jaraknya berjauhan seperti di screenshort agar menjadi berdekatan dan sejajar
+
+Setelah membaca penjelasan (untuk pertanyaan 1) dari Claude AI, saya memahami bahwa Praktikum 3 berisi teknik GridBagLayout yang dipraktikkan pada pembuatan FormBiodata di Praktikum 4.
+
+Setelah membaca penjelasan (untuk pertanyaan 2) dari Claude AI, saya dibantu dan disuruh praktik untuk membuat panel baru (jenisPanel) dengan set layout (flow layout) dengan mengatur properties bagian Allignment (Left), HGap (5), VGap (0), lalu bagian radio button yang awalnya di dalam formPanel saya pindahkan ke dalam jenisPanel sehingga berhasil.
+
+Untuk praktikum 1 saya tidak bertanya kepada AI karena sudah beberapa kali membuat Project baru sehingga sudah terbiasa, Praktikum 2 dan 4 saya mengerjakan mengikuti Langkah-langkah di modul yang diberikan dan itu sudah cukup membantu saya untuk menyelesaikannya tanpa perlu banyak bertanya pada AI, untuk membuat sketsa dan desain di NetBeans form Anggota Perpustakaan saya mengikuti bentuk tampilan seperti form Biodata dan mengatur GridBagLayout mengikuti praktikum 3.
 
 
 
