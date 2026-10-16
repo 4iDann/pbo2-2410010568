@@ -43,11 +43,37 @@ Kode tambahan sebaiknya ditulis:
 
 # p04-layout-manager
 
+# Jawaban Pertanyaan Refleksi
+Nama : Muhammad Ajidannor Rahman
+NPM : 2410010568
+Kelas : 5C 
+
+[Jawaban Pertanyaan Refleksi Pertemuan 4.txt](https://github.com/user-attachments/files/33548337/Jawaban.Pertanyaan.Refleksi.Pertemuan.4.txt)
+
+1. Karena posisi dan ukuran komponen ditentukan secara manual sehingga tampilan sulit menyesuaikan ukuran jendela dan resolusi layar. Akibatnya, komponen dapat bertumpuk atau terpotong.
+
+2. FlowLayout menyusun komponen secara berurutan dan memindahkan komponen ke baris berikutnya jika ruang tidak cukup. GridLayout membagi area menjadi baris dan kolom dengan ukuran sel yang sama, sehingga komponen menyesuaikan ukuran saat jendela dilebarkan.
+
+3.
+Weight X: Menentukan pembagian ruang horizontal tambahan untuk komponen ketika ukuran jendela diperbesar.
+Fill: Menentukan apakah komponen mengisi ruang sel yang tersedia, baik secara horizontal (HORIZONTAL), vertikal (VERTICAL), keduanya (BOTH), atau tidak sama sekali (NONE).
+
+4. formPanel dibungkus isiPanel agar komponen form dapat dikelompokkan dan diatur dengan lebih rapi. Penempatan isiPanel di posisi North menggunakan BorderLayout membuat form berada di bagian atas jendela, sehingga area lainnya dapat digunakan untuk komponen lain.
+
+5.
+Konsistensi: Label, kolom input, dan tombol disusun dengan pola yang seragam sehingga form mudah dipahami.
+Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout manager agar tampilan rapi dan terstruktur.
+
+
 # Output Ukuran Awal
 <img width="1920" height="1080" alt="Output Ukuran Awal" src="https://github.com/user-attachments/assets/0252020e-c814-46db-b958-8ebd7ab10cf4" />
 
 # Output Ukuran Lebar
 <img width="1920" height="1080" alt="Output Ukuran Lebar" src="https://github.com/user-attachments/assets/48c0c81f-cac3-4eb0-9099-040743395134" />
+
+# Panel dan Layout
+<img width="764" height="416" alt="Panel dan Layout 1" src="https://github.com/user-attachments/assets/31179485-1676-44e8-b81d-2ea0acaa8c3b" />
+<img width="770" height="428" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/19df4f55-af74-4fac-ba87-389eaca38bb1" />
 
 
 
