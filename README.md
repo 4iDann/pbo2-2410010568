@@ -1,4 +1,4 @@
-[Jawaban Pertanyaan Refleksi.txt](https://github.com/user-attachments/files/33547021/Jawaban.Pertanyaan.Refleksi.txt)# p03-komponen-gui
+# p03-komponen-gui
 
 # Output Jendela Navigator
 <img width="644" height="432" alt="Jendela Navigator" src="https://github.com/user-attachments/assets/3a80471e-4441-48da-8d23-48352067bb7e" />
@@ -13,6 +13,8 @@
 Nama : Muhammad Ajidannor Rahman
 NPM : 2410010568
 Kelas : 5C 
+
+[Jawaban Pertanyaan Refleksi.txt](https://github.com/user-attachments/files/33547021/Jawaban.Pertanyaan.Refleksi.txt)
 
 1.
 a) Top-level container adalah wadah paling luar yang menjadi "jendela" aplikasi. Ia langsung berinteraksi dengan sistem operasi dan setiap hierarki komponen Swing harus punya satu di akarnya. Contoh: JFrame (juga JDialog, JApplet).
@@ -36,4 +38,6 @@ Kode tambahan sebaiknya ditulis:
 - atau di method buatan sendiri di luar blok generated code.
 
 5. Look and Feel diterapkan saat komponen Swing dibuat (UI delegate-nya dipasang pada saat instansiasi). Jika FlatLightLaf.setup() dipanggil setelah form dibuat, komponen yang sudah ada tetap memakai tampilan lama (misalnya Metal atau Nimbus) sehingga tema tidak berlaku, atau tampilan menjadi tidak konsisten. Karena itu, setup() harus dipanggil lebih dulu, biasanya di awal method main() sebelum new MainForm().setVisible(true) (di dalam EventQueue.invokeLater).g Jawaban Pertanyaan Refleksi.txt…]()
+
+#
 
