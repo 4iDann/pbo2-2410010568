@@ -86,7 +86,7 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 
 2. Hasilnya 5 baris. Kalau Rows diisi 0, Java menghitung sendiri jumlah barisnya. Ada 9 tombol dan 2 kolom, jadi tombol dibagi dua-dua: 4 baris penuh, lalu 1 baris sisa yang hanya berisi tombol 9.
 
-3.Tombol jadi melebar sampai memenuhi lebar panel, dan ikut melebar kalau jendela dilebarkan, sehingga semua tombol sama lebar. Sebelumnya tombol hanya selebar tulisannya.
+3. Tombol jadi melebar sampai memenuhi lebar panel, dan ikut melebar kalau jendela dilebarkan, sehingga semua tombol sama lebar. Sebelumnya tombol hanya selebar tulisannya.
 
 
 # Eksperimen Praktikum 4
