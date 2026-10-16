@@ -43,5 +43,11 @@ Kode tambahan sebaiknya ditulis:
 
 # p04-layout-manager
 
+# Output Ukuran Awal
+<img width="1920" height="1080" alt="Output Ukuran Awal" src="https://github.com/user-attachments/assets/0252020e-c814-46db-b958-8ebd7ab10cf4" />
+
+# Output Ukuran Lebar
+<img width="1920" height="1080" alt="Output Ukuran Lebar" src="https://github.com/user-attachments/assets/48c0c81f-cac3-4eb0-9099-040743395134" />
+
 
 
