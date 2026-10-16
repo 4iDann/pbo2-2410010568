@@ -54,14 +54,12 @@ Kelas : 5C
 
 2. FlowLayout menyusun komponen secara berurutan dan memindahkan komponen ke baris berikutnya jika ruang tidak cukup. GridLayout membagi area menjadi baris dan kolom dengan ukuran sel yang sama, sehingga komponen menyesuaikan ukuran saat jendela dilebarkan.
 
-3.
-Weight X: Menentukan pembagian ruang horizontal tambahan untuk komponen ketika ukuran jendela diperbesar.
+3. Weight X: Menentukan pembagian ruang horizontal tambahan untuk komponen ketika ukuran jendela diperbesar.
 Fill: Menentukan apakah komponen mengisi ruang sel yang tersedia, baik secara horizontal (HORIZONTAL), vertikal (VERTICAL), keduanya (BOTH), atau tidak sama sekali (NONE).
 
 4. formPanel dibungkus isiPanel agar komponen form dapat dikelompokkan dan diatur dengan lebih rapi. Penempatan isiPanel di posisi North menggunakan BorderLayout membuat form berada di bagian atas jendela, sehingga area lainnya dapat digunakan untuk komponen lain.
 
-5.
-Konsistensi: Label, kolom input, dan tombol disusun dengan pola yang seragam sehingga form mudah dipahami.
+5. Konsistensi: Label, kolom input, dan tombol disusun dengan pola yang seragam sehingga form mudah dipahami.
 Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout manager agar tampilan rapi dan terstruktur.
 
 
