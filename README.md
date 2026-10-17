@@ -66,7 +66,7 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 <img width="2064" height="2934" alt="Form Sketsa" src="https://github.com/user-attachments/assets/63c614eb-e887-488a-9bc5-49606e149c0e" />
 
 # Tabel Rancangan
-<img width="477" height="200" alt="Tabel Rancangan" src="https://github.com/user-attachments/assets/65d4b457-308c-4cab-bc0e-0550ca9d63e4" />
+<img width="499" height="154" alt="Tabel Rancangan" src="https://github.com/user-attachments/assets/91eb94d4-a5d1-4ec0-a5b2-abd65e63eebe" />
 
 # Output Ukuran Awal
 <img width="1920" height="1080" alt="Output Ukuran Awal" src="https://github.com/user-attachments/assets/0252020e-c814-46db-b958-8ebd7ab10cf4" />
@@ -98,6 +98,9 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 2. Saat diatur ke North, form tetap menempel di bawah header walau jendela ditinggikan. Tetapi saat diatur Center, form memakai seluruh sisa tinggi, jadi barisnya bergeser atau merenggang dan terlihat jauh dari header.
 
 3. Yang rusak lebih dulu tombol Batal dan Simpan, karena tombolnya turun ke baris kedua tapi tempatnya tidak bertambah tinggi, jadi terpotong. Setelah itu label dan isian menyempit, dan judul di header ikut terpotong.
+
+# Dinilai oleh Muhammad Arsyad (2410010620)
+<img width="494" height="268" alt="Di Nilai" src="https://github.com/user-attachments/assets/8f12aec9-44f6-494e-89d3-932487753f35" />
 
 # Deklarasi AI
 
