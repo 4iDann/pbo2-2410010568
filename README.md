@@ -124,5 +124,26 @@ Setelah membaca penjelasan (untuk pertanyaan 2) dari Claude AI, saya dibantu dan
 
 Untuk praktikum 1 saya tidak bertanya kepada AI karena sudah beberapa kali membuat Project baru sehingga sudah terbiasa, Praktikum 2 dan 4 saya mengerjakan mengikuti Langkah-langkah di modul yang diberikan dan itu sudah cukup membantu saya untuk menyelesaikannya tanpa perlu banyak bertanya pada AI, untuk membuat sketsa dan desain di NetBeans form Anggota Perpustakaan saya mengikuti bentuk tampilan seperti form Biodata dan mengatur GridBagLayout mengikuti praktikum 3.
 
+_______________________________________________________________
+
+# p05-event-handling
+
+# FormAnggotaPerpustakaan: Peta Event (Pertemuan 5)
+
+Event dibuat melalui klik kanan komponen, Events di GUI Builder.
+
+| Komponen | Menu Events | Aksi |
+|---|---|---|
+| Kotak centang `setujuCheck` | Item: itemStateChanged | Tombol Daftar hanya aktif jika dicentang |
+| Tombol Batal `batalButton` | Action: actionPerformed | Mengosongkan semua isian dan mengembalikan fokus ke NPM |
+| Tombol Daftar `daftarButton` | Action: actionPerformed | Menampilkan ringkasan data dengan JOptionPane |
+| Isian NPM `npmField` | Key: keyReleased | Label `digitLabel` menampilkan jumlah digit, misalnya "8 dari 10 digit" |
+| Form (JFrame di Navigator) | Window: windowClosing | Meminta konfirmasi sebelum aplikasi ditutup |
+
+## Pengaturan Properties
+- `defaultCloseOperation` form: DO_NOTHING
+- `enabled` tombol Daftar: tidak dicentang
+
+
 
 
