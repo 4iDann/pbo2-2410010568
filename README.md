@@ -124,7 +124,7 @@ Setelah membaca penjelasan (untuk pertanyaan 2) dari Claude AI, saya dibantu dan
 
 Untuk praktikum 1 saya tidak bertanya kepada AI karena sudah beberapa kali membuat Project baru sehingga sudah terbiasa, Praktikum 2 dan 4 saya mengerjakan mengikuti Langkah-langkah di modul yang diberikan dan itu sudah cukup membantu saya untuk menyelesaikannya tanpa perlu banyak bertanya pada AI, untuk membuat sketsa dan desain di NetBeans form Anggota Perpustakaan saya mengikuti bentuk tampilan seperti form Biodata dan mengatur GridBagLayout mengikuti praktikum 3.
 
-_______________________________________________________________
+# _______________________________________________________________
 
 # p05-event-handling
 
