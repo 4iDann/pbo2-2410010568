@@ -147,6 +147,15 @@ Event dibuat melalui klik kanan komponen, Events di GUI Builder.
 - `defaultCloseOperation` form: DO_NOTHING
 - `enabled` tombol Daftar: tidak dicentang
 
+# Events tombol Daftar
+<img width="1920" height="1080" alt="Screenshot (105)" src="https://github.com/user-attachments/assets/16f9cfd2-e660-4c6c-9640-00b04dd65e60" />
+
+# Layar dialog ringkasan
+<img width="1920" height="1080" alt="Screenshot (106)" src="https://github.com/user-attachments/assets/16ea76e8-c537-4799-ad39-2f285240bed0" />
+
+# Layar dialog konfirmasi keluar
+<img width="1920" height="1080" alt="Screenshot (107)" src="https://github.com/user-attachments/assets/515649f5-6574-4071-b884-3b4d5863534e" />
+
 
 
 
