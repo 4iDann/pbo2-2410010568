@@ -128,6 +128,9 @@ Untuk praktikum 1 saya tidak bertanya kepada AI karena sudah beberapa kali membu
 
 # p05-event-handling
 
+# Tabel Pengamatan
+<img width="434" height="319" alt="Cuplikan layar 2026-10-23 212004" src="https://github.com/user-attachments/assets/4ee90b9f-0546-4466-b5a8-5a23a538ffca" />
+
 # FormAnggotaPerpustakaan: Peta Event (Pertemuan 5)
 
 Event dibuat melalui klik kanan komponen, Events di GUI Builder.
