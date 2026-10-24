@@ -167,14 +167,10 @@ Event dibuat melalui klik kanan komponen, Events di GUI Builder.
 - `enabled` tombol Daftar: tidak dicentang
 
 # Events tombol Daftar
-<img width="1920" height="1080" alt="Screenshot (105)" src="https://github.com/user-attachments/assets/16f9cfd2-e660-4c6c-9640-00b04dd65e60" />
+<img width="1920" height="994" alt="Events tombol Daftar" src="https://github.com/user-attachments/assets/8b32fdc8-9a23-41f0-ab02-21614a7fe70b" />
 
 # Layar dialog ringkasan
-<img width="1920" height="1080" alt="Screenshot (106)" src="https://github.com/user-attachments/assets/16ea76e8-c537-4799-ad39-2f285240bed0" />
+<img width="1920" height="998" alt="Layar dialog ringkasan" src="https://github.com/user-attachments/assets/1e47ef85-a39b-4fa2-985a-8d504f41f31d" />
 
 # Layar dialog konfirmasi keluar
-<img width="1920" height="1080" alt="Screenshot (107)" src="https://github.com/user-attachments/assets/515649f5-6574-4071-b884-3b4d5863534e" />
-
-
-
-
+<img width="1920" height="1008" alt="Layar dialog konfirmasi keluar" src="https://github.com/user-attachments/assets/8a7e9d4d-318e-40b9-a356-45c37c4162de" />
