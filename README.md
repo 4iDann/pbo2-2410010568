@@ -131,6 +131,25 @@ Untuk praktikum 1 saya tidak bertanya kepada AI karena sudah beberapa kali membu
 # Tabel Pengamatan
 <img width="434" height="319" alt="Cuplikan layar 2026-10-23 212004" src="https://github.com/user-attachments/assets/4ee90b9f-0546-4466-b5a8-5a23a538ffca" />
 
+# Eksperimen Praktikum 3
+[Eksperimen Praktikum 3.txt](https://github.com/user-attachments/files/33900234/Eksperimen.Praktikum.3.txt)
+
+1. Setelah saya hapus pemeriksaan ItemEvent.SELECTED dan menambahkan System.out.println("item berubah");, pesan tercetak 2 kali setiap saya mengganti pilihan. Ini terjadi karena Combo Box memicu itemStateChanged dua kali: sekali untuk pilihan lama yang dilepas (DESELECTED) dan sekali untuk pilihan baru yang dipilih (SELECTED).
+
+2. Setelah saya ganti ke keyPressed, hasil yang tampil terlambat satu karakter. Misalnya saat saya mengetik 36, hasilnya masih menghitung 3. Penyebabnya, keyPressed dijalankan saat tombol baru ditekan, padahal hurufnya belum masuk ke isian, sehingga getText() masih membaca teks yang lama. Pada keyReleased, tombol sudah dilepas dan huruf sudah masuk, jadi teks yang dibaca sudah yang terbaru.
+
+3. Setelah blok try dan catch saya hapus lalu saya mengetik huruf pada isian, di jendela Output muncul pesan error NumberFormatException. Aplikasi tidak tertutup, tetapi hasil di layar tidak berubah dan tidak ada pesan apa pun untuk pengguna. Ini menunjukkan bahwa try-catch diperlukan agar input yang salah bisa ditangani dengan pesan “Masukkan angka yang valid”.loading Eksperimen Praktikum 3.txt…]()
+
+# Eksperimen Praktikum 4
+[Eksperimen Praktikum 4.txt](https://github.com/user-attachments/files/33900236/Eksperimen.Praktikum.4.txt)
+
+1. Setelah saya membuat event actionPerformed untuk kaliButton tanpa menghapus lambda, lalu menambahkan System.out.println("kali"); di kedua tempat, pesan “kali” tercetak 2 kali setiap tombol diklik. Hal ini terjadi karena tombol punya dua listener, satu dari GUI Builder dan satu dari lambda, dan keduanya dijalankan. Karena itu, satu tombol sebaiknya hanya memakai satu cara agar aksinya tidak berjalan dua kali dan kodenya tidak membingungkan.
+
+2. Tab Design: saya menambahkan tombol baru bertuliskan % ke operatorPanel, mengubah Grid Layout panel itu dari 4 menjadi 5 kolom, lalu membuat event actionPerformed lewat klik kanan, Events, Action.
+Tab Source: saya mengisi event handler dengan hitung('%');, lalu menambahkan case '%' -> a % b; pada switch di method hitung. Saya juga menyesuaikan pemeriksaan pembagian nol agar berlaku untuk %.
+
+3. Setelah tombol Hapus ditekan, kursor langsung berada di isian pertama karena di akhir method hapus ada baris angka1Field.requestFocusInWindow();. Baris itu memindahkan fokus ke isian pertama, sehingga saya bisa langsung mengetik angka baru tanpa mengklik isian terlebih dahulu.
+   
 # FormAnggotaPerpustakaan: Peta Event (Pertemuan 5)
 
 Event dibuat melalui klik kanan komponen, Events di GUI Builder.
