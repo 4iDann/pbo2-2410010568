@@ -174,3 +174,12 @@ Event dibuat melalui klik kanan komponen, Events di GUI Builder.
 
 # Layar dialog konfirmasi keluar
 <img width="1920" height="1005" alt="Tampilan Dialog Konfirmasi Keluar" src="https://github.com/user-attachments/assets/17fcb787-366b-48a2-bd9e-758534e80b6b" />
+
+## Deklarasi Penggunaan AI
+
+**Alat yang dipakai:** Claude AI
+Saya memakainya untuk meminta bantuan membuat kode untuk event `setujuCheck`, tombol Batal, tombol Daftar, isian NPM, dan konfrimasi aplikasi saat ditutup. Saya meminta kode dengan nama variabel yang belum diubah jadi saya mengetik sendiri dengan menyesuaikan nama variabel yang dibuat.
+
+Selain itu, saya meminta bantuan mengatasi kendala Git: `git push` yang ditolak, penggabungan perubahan dengan `git pull`, dan pengembalian form Pertemuan 4 ke versi sebelum ditambah event (Awalnya saya menambah event langsung ke `FormAnggotaPerpustakaan` pertemuan 4 jadi saya ulang dengan menyalin file `FormAnggotaPerpustakaan` lalu menempel ke pertemuan 5 dan menambahkan event sesuai permintaan tugas).
+
+Untuk bagian praktikum saya tidak mengalami kendala, dan modul yang diberikan sangat membantu saya menyelesaikan praktikum dan eksperimen, sehingga bagian tugas mandiri untuk menambahkan event saya dapat mengerjakan dengan baik, dan untuk mengisi bagian kode saya meminta bantuan dari AI.
