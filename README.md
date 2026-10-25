@@ -75,8 +75,8 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 <img width="1920" height="1080" alt="Output Ukuran Lebar" src="https://github.com/user-attachments/assets/48c0c81f-cac3-4eb0-9099-040743395134" />
 
 # Panel dan Layout
-<img width="764" height="416" alt="Panel dan Layout 1" src="https://github.com/user-attachments/assets/31179485-1676-44e8-b81d-2ea0acaa8c3b" />
-<img width="770" height="428" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/19df4f55-af74-4fac-ba87-389eaca38bb1" />
+<img width="1920" height="1080" alt="Panel dan Layout" src="https://github.com/user-attachments/assets/f70e44c2-367c-4838-b621-ad95714f1d0e" />
+<img width="1920" height="1080" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/9b3b3b5a-904f-429b-a9ee-42b8809d3d2c" />
 
 # Eksperimen Praktikum 2
 
