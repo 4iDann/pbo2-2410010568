@@ -44,6 +44,14 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     }
         statusLabel.setForeground(warnaKesalahan());
         
+        // Perbaikan 1 (heuristik 1): tooltip tombol Daftar
+        daftarButton.setToolTipText("Centang persetujuan untuk mengaktifkan tombol Daftar");
+        
+        // Perbaikan 4 (heuristik 7): Enter pindah ke isian berikutnya
+        npmField.addActionListener(e -> namaField.requestFocusInWindow());
+        namaField.addActionListener(e -> prodiCombo.requestFocusInWindow());
+        emailField.addActionListener(e -> nohpField.requestFocusInWindow());
+        
         getRootPane().setDefaultButton(daftarButton);
         pack();                      // hitung ulang ukuran setelah gaya huruf berubah
         setMinimumSize(getSize());   // jendela tidak dapat dikecilkan melebihi ukuran awal
@@ -63,6 +71,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         jenisanggotaGroup = new javax.swing.ButtonGroup();
         headerPanel = new javax.swing.JPanel();
         judulLabel = new javax.swing.JLabel();
+        keteranganLabel = new javax.swing.JLabel();
         isiPanel = new javax.swing.JPanel();
         formPanel = new javax.swing.JPanel();
         dataanggotaLabel = new javax.swing.JLabel();
@@ -112,6 +121,9 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         judulLabel.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         judulLabel.setText("FORM ANGGOTA PERPUSTAKAAN");
         headerPanel.add(judulLabel);
+
+        keteranganLabel.setText("Semua isian wajib diisi, kecuali Alamat");
+        headerPanel.add(keteranganLabel);
 
         getContentPane().add(headerPanel, java.awt.BorderLayout.PAGE_START);
 
@@ -217,6 +229,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 6, 12);
         formPanel.add(setujuLabel, gridBagConstraints);
+
+        npmPesanLabel.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -224,6 +238,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 2, 2, 0);
         formPanel.add(npmPesanLabel, gridBagConstraints);
+
+        namaPesanLabel.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -231,6 +247,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 2, 2, 0);
         formPanel.add(namaPesanLabel, gridBagConstraints);
+
+        prodiPesanLabel.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -238,6 +256,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 2, 2, 0);
         formPanel.add(prodiPesanLabel, gridBagConstraints);
+
+        emailPesanLabel.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 10;
@@ -245,6 +265,8 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(0, 2, 2, 0);
         formPanel.add(emailPesanLabel, gridBagConstraints);
+
+        nohpPesanLabel.setText(" ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 12;
@@ -405,7 +427,9 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void setujuCheckItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_setujuCheckItemStateChanged
-        daftarButton.setEnabled(setujuCheck.isSelected());
+        boolean setuju = setujuCheck.isSelected();
+        daftarButton.setEnabled(setuju);
+        daftarButton.setToolTipText(setuju ? null : "Centang persetujuan untuk mengaktifkan tombol Daftar");
     }//GEN-LAST:event_setujuCheckItemStateChanged
 
     private void batalButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_batalButtonActionPerformed
@@ -546,10 +570,13 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     }
 
     private void batal() {
+        // Aksi yang menghapus data meminta konfirmasi terlebih dahulu
         if (adaIsian()) {
-            int jawab = JOptionPane.showConfirmDialog(this,
+            Object[] pilihan = {"Ya", "Tidak"};
+            int jawab = JOptionPane.showOptionDialog(this,
                     "Data yang sudah diisi akan dihapus. Lanjutkan?", "Konfirmasi",
-                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+                    JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE,
+                    null, pilihan, pilihan[1]);   // pilihan[1] = "Tidak" terfokus lebih dulu
             if (jawab != JOptionPane.YES_OPTION) {
                 return;
             }
@@ -590,7 +617,9 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     public static void main(String args[]) {
         // Blok Nimbus buatan NetBeans diganti dengan tema FlatLaf
         FlatLightLaf.setup(); 
-
+        javax.swing.UIManager.put("OptionPane.yesButtonText", "Ya");      // tambahan
+        javax.swing.UIManager.put("OptionPane.noButtonText", "Tidak");    // tambahan
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new FormAnggotaPerpustakaan().setVisible(true));
     }
@@ -614,6 +643,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     private javax.swing.JPanel jenisPanel;
     private javax.swing.ButtonGroup jenisanggotaGroup;
     private javax.swing.JLabel judulLabel;
+    private javax.swing.JLabel keteranganLabel;
     private javax.swing.JLabel kontakLabel;
     private javax.swing.JRadioButton mahasiswaRadio;
     private javax.swing.JTextField namaField;
