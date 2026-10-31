@@ -65,7 +65,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         emailField = new javax.swing.JTextField();
         nohpField = new javax.swing.JTextField();
         prodiCombo = new javax.swing.JComboBox<>();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        alamatScroll = new javax.swing.JScrollPane();
         alamatArea = new javax.swing.JTextArea();
         persetujuanCheck = new javax.swing.JCheckBox();
         jenisPanel = new javax.swing.JPanel();
@@ -216,7 +216,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
 
         alamatArea.setColumns(20);
         alamatArea.setRows(5);
-        jScrollPane1.setViewportView(alamatArea);
+        alamatScroll.setViewportView(alamatArea);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
@@ -224,7 +224,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(4, 0, 4, 0);
-        formPanel.add(jScrollPane1, gridBagConstraints);
+        formPanel.add(alamatScroll, gridBagConstraints);
 
         persetujuanCheck.setText("Setuju dengan tata tertib \nperpustakaan ");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -291,6 +291,7 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextArea alamatArea;
     private javax.swing.JLabel alamatLabel;
+    private javax.swing.JScrollPane alamatScroll;
     private javax.swing.JButton batalButton;
     private javax.swing.JButton daftarButton;
     private javax.swing.JLabel dataanggotaLabel;
@@ -300,7 +301,6 @@ public class FormAnggotaPerpustakaan extends javax.swing.JFrame {
     private javax.swing.JPanel formPanel;
     private javax.swing.JPanel headerPanel;
     private javax.swing.JPanel isiPanel;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel jenisLabel;
     private javax.swing.JPanel jenisPanel;
     private javax.swing.ButtonGroup jenisanggotaGroup;
