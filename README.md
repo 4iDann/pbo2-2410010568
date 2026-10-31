@@ -75,8 +75,8 @@ Alignment (perataan): Label dan kolom input disejajarkan menggunakan layout mana
 <img width="1920" height="1080" alt="Output Ukuran Lebar" src="https://github.com/user-attachments/assets/48c0c81f-cac3-4eb0-9099-040743395134" />
 
 # Panel dan Layout
-<img width="764" height="416" alt="Panel dan Layout 1" src="https://github.com/user-attachments/assets/31179485-1676-44e8-b81d-2ea0acaa8c3b" />
-<img width="770" height="428" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/19df4f55-af74-4fac-ba87-389eaca38bb1" />
+<img width="1920" height="1080" alt="Panel dan Layout" src="https://github.com/user-attachments/assets/f70e44c2-367c-4838-b621-ad95714f1d0e" />
+<img width="1920" height="1080" alt="Panel dan Layout 2" src="https://github.com/user-attachments/assets/9b3b3b5a-904f-429b-a9ee-42b8809d3d2c" />
 
 # Eksperimen Praktikum 2
 
@@ -170,7 +170,15 @@ Event dibuat melalui klik kanan komponen, Events di GUI Builder.
 <img width="545" height="994" alt="Events tombol Daftar" src="https://github.com/user-attachments/assets/b5384c39-cef0-4336-b9a4-f9f934951bbe" />
 
 # Layar dialog ringkasan
-<img width="1920" height="998" alt="Layar dialog ringkasan" src="https://github.com/user-attachments/assets/1e47ef85-a39b-4fa2-985a-8d504f41f31d" />
+<img width="1920" height="1021" alt="Tampilan Dialog Ringkasan" src="https://github.com/user-attachments/assets/7ebd6675-360a-4c59-af23-9526feb9d263" />
 
 # Layar dialog konfirmasi keluar
-<img width="1920" height="1008" alt="Layar dialog konfirmasi keluar" src="https://github.com/user-attachments/assets/8a7e9d4d-318e-40b9-a356-45c37c4162de" />
+<img width="1920" height="1005" alt="Tampilan Dialog Konfirmasi Keluar" src="https://github.com/user-attachments/assets/17fcb787-366b-48a2-bd9e-758534e80b6b" />
+
+## Deklarasi Penggunaan AI
+
+**Alat yang dipakai:** Claude AI, Saya memakainya untuk meminta bantuan membuat kode untuk event `setujuCheck`, tombol Batal, tombol Daftar, isian NPM, dan konfrimasi aplikasi saat ditutup. Saya meminta kode dengan nama variabel yang belum diubah jadi saya mengetik sendiri dengan menyesuaikan nama variabel yang dibuat.
+
+Selain itu, saya meminta bantuan mengatasi kendala Git: `git push` yang ditolak, penggabungan perubahan dengan `git pull`, dan pengembalian form Pertemuan 4 ke versi sebelum ditambah event (Awalnya saya menambah event langsung ke `FormAnggotaPerpustakaan` pertemuan 4 jadi saya ulang dengan menyalin file `FormAnggotaPerpustakaan` lalu menempel ke pertemuan 5 dan menambahkan event sesuai permintaan tugas).
+
+Untuk bagian praktikum saya tidak mengalami kendala, dan modul yang diberikan sangat membantu saya menyelesaikan praktikum dan eksperimen, sehingga bagian tugas mandiri untuk menambahkan event saya dapat mengerjakan dengan baik, dan untuk mengisi bagian kode saya meminta bantuan dari AI.
