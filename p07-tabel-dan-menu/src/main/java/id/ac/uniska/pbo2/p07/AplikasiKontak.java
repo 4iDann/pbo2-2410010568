@@ -246,7 +246,7 @@ public class AplikasiKontak extends javax.swing.JFrame {
         if (barisTampilan < 0) { 
             return -1; 
         } 
-        return kontakTable.convertRowIndexToModel(barisTampilan); 
+        return kontakTable.convertRowIndexToModel(barisTampilan);
     }
     
     private void tambah() { 
