@@ -1,4 +1,4 @@
-[Deklarasi AI.txt](https://github.com/user-attachments/files/34236074/Deklarasi.AI.txt)# p03-komponen-gui
+# p03-komponen-gui
 
 # Output Jendela Navigator
 <img width="644" height="432" alt="Jendela Navigator" src="https://github.com/user-attachments/assets/3a80471e-4441-48da-8d23-48352067bb7e" />
@@ -238,7 +238,7 @@ Untuk bagian praktikum saya mengerjakan mengikuti panduan di modul, lalu untuk l
 https://drive.google.com/file/d/1JTwY2YjSbbiHaDip2ZAfDlXBIsPmdKxu/view?usp=sharing
 
 # Deklarasi AI
-[Uploading Deklarasi AI.txt…]()
+[Deklarasi AI.txt](https://github.com/user-attachments/files/34236074/Deklarasi.AI.txt)
 
 Saya menggunakan Claude AI
 
