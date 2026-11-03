@@ -4,19 +4,23 @@
  */
 package id.ac.uniska.pbo2.p08.uts;
 
+import com.formdev.flatlaf.FlatLightLaf;
+
 /**
- *
- * @author muham
+ * Nama : Muhammad Ajidannor Rahman
+ * NPM : 2410010568
+ * @author muhamm
  */
 public class DaftarBelanja extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(DaftarBelanja.class.getName());
-
+    private final BarangTableModel model = new BarangTableModel();
     /**
      * Creates new form DaftarBelanja
      */
     public DaftarBelanja() {
         initComponents();
+        
     }
 
     /**
@@ -35,7 +39,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         kategoriLabel = new javax.swing.JLabel();
         hargaLabel = new javax.swing.JLabel();
         jumlahLabel = new javax.swing.JLabel();
-        namabarangField = new javax.swing.JTextField();
+        namaField = new javax.swing.JTextField();
         hargaField = new javax.swing.JTextField();
         kategoriCombo = new javax.swing.JComboBox<>();
         jumlahSpinner = new javax.swing.JSpinner();
@@ -44,9 +48,9 @@ public class DaftarBelanja extends javax.swing.JFrame {
         tambahButton = new javax.swing.JButton();
         bersihkanButton = new javax.swing.JButton();
         tabelPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
+        barangScroll = new javax.swing.JScrollPane();
+        barangTable = new javax.swing.JTable();
+        statusLabelPesan = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,6 +59,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         formPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(8, 16, 8, 16));
         formPanel.setLayout(new java.awt.GridBagLayout());
 
+        namaLabel.setLabelFor(namaField);
         namaLabel.setText("Nama Barang");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -63,6 +68,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 6, 12);
         formPanel.add(namaLabel, gridBagConstraints);
 
+        kategoriLabel.setLabelFor(kategoriCombo);
         kategoriLabel.setText("Kategori");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -71,6 +77,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 6, 12);
         formPanel.add(kategoriLabel, gridBagConstraints);
 
+        hargaLabel.setLabelFor(hargaField);
         hargaLabel.setText("Harga (Rp)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -79,6 +86,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(6, 0, 6, 12);
         formPanel.add(hargaLabel, gridBagConstraints);
 
+        jumlahLabel.setLabelFor(jumlahSpinner);
         jumlahLabel.setText("Jumlah");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -92,7 +100,7 @@ public class DaftarBelanja extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 1.0;
         gridBagConstraints.insets = new java.awt.Insets(4, 0, 4, 0);
-        formPanel.add(namabarangField, gridBagConstraints);
+        formPanel.add(namaField, gridBagConstraints);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 4;
@@ -128,86 +136,71 @@ public class DaftarBelanja extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 2, 2, 0);
         formPanel.add(validasiLabelPesan, gridBagConstraints);
 
-        isiPanel.add(formPanel, java.awt.BorderLayout.LINE_START);
+        isiPanel.add(formPanel, java.awt.BorderLayout.NORTH);
 
         tombolPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         tambahButton.setText("Tambah");
+        tambahButton.addActionListener(this::tambahButtonActionPerformed);
         tombolPanel.add(tambahButton);
 
         bersihkanButton.setText("Bersihkan");
+        bersihkanButton.addActionListener(this::bersihkanButtonActionPerformed);
         tombolPanel.add(bersihkanButton);
 
-        isiPanel.add(tombolPanel, java.awt.BorderLayout.SOUTH);
+        isiPanel.add(tombolPanel, java.awt.BorderLayout.WEST);
 
         getContentPane().add(isiPanel, java.awt.BorderLayout.WEST);
 
         tabelPanel.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 12, 0, 12));
         tabelPanel.setLayout(new java.awt.BorderLayout());
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
+        barangTable.setModel(model);
+        barangScroll.setViewportView(barangTable);
 
-        tabelPanel.add(jScrollPane1, java.awt.BorderLayout.CENTER);
+        tabelPanel.add(barangScroll, java.awt.BorderLayout.CENTER);
 
-        jLabel1.setText("jLabel1");
-        tabelPanel.add(jLabel1, java.awt.BorderLayout.PAGE_END);
+        statusLabelPesan.setText(" ");
+        tabelPanel.add(statusLabelPesan, java.awt.BorderLayout.PAGE_END);
 
         getContentPane().add(tabelPanel, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void bersihkanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bersihkanButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_bersihkanButtonActionPerformed
+
+    private void tambahButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tambahButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+        FlatLightLaf.setup();
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new DaftarBelanja().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane barangScroll;
+    private javax.swing.JTable barangTable;
     private javax.swing.JButton bersihkanButton;
     private javax.swing.JPanel formPanel;
     private javax.swing.JTextField hargaField;
     private javax.swing.JLabel hargaLabel;
     private javax.swing.JPanel isiPanel;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
     private javax.swing.JLabel jumlahLabel;
     private javax.swing.JSpinner jumlahSpinner;
     private javax.swing.JComboBox<String> kategoriCombo;
     private javax.swing.JLabel kategoriLabel;
+    private javax.swing.JTextField namaField;
     private javax.swing.JLabel namaLabel;
-    private javax.swing.JTextField namabarangField;
+    private javax.swing.JLabel statusLabelPesan;
     private javax.swing.JPanel tabelPanel;
     private javax.swing.JButton tambahButton;
     private javax.swing.JPanel tombolPanel;
