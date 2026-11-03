@@ -5,7 +5,8 @@
 package id.ac.uniska.pbo2.p08.uts;
 
 /**
- *
+ * Nama : Muhammad Ajidannor Rahman
+ * NPM : 2410010568
  * @author muham
  */
 public class Barang {

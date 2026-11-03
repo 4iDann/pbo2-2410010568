@@ -9,7 +9,8 @@ import java.util.List;
 import javax.swing.table.AbstractTableModel;
 
 /**
- *
+ * Nama: Muhammad Ajidannor Rahman
+ * NPM : 2410010568
  * @author muham
  */
 public class BarangTableModel extends AbstractTableModel { 
