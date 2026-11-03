@@ -187,6 +187,14 @@ Untuk bagian praktikum saya tidak mengalami kendala, dan modul yang diberikan sa
 
 # p06-validasi-input
 
+# Lembar Peer Review Heuristik
+<img width="277" height="389" alt="Lembar_Peer_Review_Heuristik1" src="https://github.com/user-attachments/assets/71dc175c-74c7-40ea-9120-7431ba4d14c1" />
+<img width="298" height="400" alt="Lembar_Peer_Review_Heuristik2" src="https://github.com/user-attachments/assets/e22f2871-94f7-4b0e-9262-a77164d50f8f" />
+<img width="295" height="372" alt="Lembar_Peer_Review_Heuristik3" src="https://github.com/user-attachments/assets/8188f68a-1122-4975-8a29-bfe2aea7fff3" />
+
+# Tabel Temuan dan Perbaikan
+<img width="391" height="403" alt="Tabel Temuan dan Perbaikan" src="https://github.com/user-attachments/assets/5cff1350-33cc-4c41-a6d8-5797b927e5e8" />
+
 # Tangkapan layar form dengan pesan kesalahan
 <img width="1920" height="1013" alt="Pesan Error" src="https://github.com/user-attachments/assets/2598f35d-fdd6-48ce-b547-357d94b0544b" />
 
