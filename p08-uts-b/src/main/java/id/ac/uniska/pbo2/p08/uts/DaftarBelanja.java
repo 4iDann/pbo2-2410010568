@@ -169,13 +169,21 @@ public class DaftarBelanja extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void bersihkanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bersihkanButtonActionPerformed
-        // TODO add your handling code here:
+        bersihkan();
     }//GEN-LAST:event_bersihkanButtonActionPerformed
 
     private void tambahButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tambahButtonActionPerformed
-        // TODO add your handling code here:
+        tambah();
     }//GEN-LAST:event_tambahButtonActionPerformed
 
+    private void tambah() { 
+        Barang baru = new DialogKontak(this, "Tambah Kontak", null).tampilkan(); 
+        if (baru != null) { 
+            model.tambah(baru); 
+            perbaruiStatus(); 
+        } 
+    } 
+    
     /**
      * @param args the command line arguments
      */
